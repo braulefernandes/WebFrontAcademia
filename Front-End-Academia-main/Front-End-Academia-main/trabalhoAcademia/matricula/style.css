@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #05121A;
+    display: flex;
+    justify-content: left;
+    align-items: center; 
+    box-shadow: 0px 3px 5px #F24405;
+    width: 100%;
+}
+
+header .img-logo p {
+    color: #fdfdfd;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+header .img-logo img {
+    width: 80px;
+    height: 50px;
+}
+
+main h3 {
+    color: #05121A;
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+}
+
+main p {
+    color: #05121A;
+    font-size: 1.3rem;
+}
+
+main a {
+    text-decoration: none;
+    color: #F24405;
+}
+
+.radio-genero, .radio-plano {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.radio-genero p, .radio-plano p {
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-left: 0.2rem;
+}
+
+.radio-genero p:not(:last-child), .radio-plano p:not(:last-child) {
+    margin-right: 1rem;
+}
+
+main .botao-ficar {
+    width: 45%;
+    border: none;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: #F24405;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    color: #fdfdfd;
+}
+
+main .botao-ficar a {
+    text-decoration: none;
+    color: #fdfdfd;
+}
+
+main .botao-sair {
+    width: 45%;
+    border-color: #F24405;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+}
+
+main .botao-sair a {
+    text-decoration: none;
+    color: #F24405;
+}
+
+@media (max-width: 768px) {
+    main h3 {
+        font-size: 2rem;
+    }
+
+    header p{
+        display: none;
+    }
+}
