@@ -78,21 +78,6 @@ document.getElementById("btn-salvar").addEventListener("click", function () {
     alert("Dados salvos com sucesso!");
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function mostrarSecao(secao) {
     // Ocultar todas as seções
     let sections = document.querySelectorAll('main section');
@@ -308,6 +293,37 @@ function informacao_frequencia(frequencia) {
 document.addEventListener("DOMContentLoaded", () => {
     informacao_frequencia("99%");
 });
+
+// PEGA A INFORMAÇÃO DA VALOR DO PLANO
+function informacao_valor_plano(valor_plano) {
+    const planoElemento = document.getElementById("R$");
+    planoElemento.textContent = valor_plano;
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    informacao_frequencia("99%");
+});
+
+// PEGA A INFORMAÇÃO DA FREQUENCIA
+function informacao_frequencia(frequencia) {
+    const planoElemento = document.getElementById("frequencia-texto");
+    planoElemento.textContent = frequencia;
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    informacao_frequencia("99%");
+});
+
+
+
+
+
+
+
+
+
+
+
 
 // PEGA A INFORMAÇÃO DA SALDO DEVEDOR
 function informacao_saldo_devedor(saldo_devedor) {

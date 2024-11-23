@@ -334,6 +334,7 @@ main section.treinos-user .treinos-gerais .produtos-container .box-produtos .ben
     width: 1rem;
     height: 1rem;
     margin-right: 0.5rem;
+    margin-bottom: 10%;
 }
 
 main section.treinos-user .treinos-gerais .produtos-container .box-produtos .treino-button button{
@@ -531,6 +532,11 @@ main section.meu-cadastro .botao-alteracoes{
     align-items: center;
 }
 
+.highlighted {
+    background-color: #F24405; /* Cor de destaque */
+    color: #fdfdfd; /* Cor do texto no destaque */
+    font-weight: bold; /* Realce no texto */
+}
 
 
 
