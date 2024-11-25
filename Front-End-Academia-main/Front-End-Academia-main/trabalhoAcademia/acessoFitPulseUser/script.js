@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const input = document.getElementById("input-data_nascimento");
 
     // Define o texto do placeholder dinamicamente
-    input.setAttribute("placeholder", "Data de Nascimento");
+    input.setAttribute("placeholder", "28/08/2003");
 });
 
 // COLOCAR A INFORMAÇÃO NO PLACEHOLDER NO TELEFONE
@@ -131,7 +131,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const input = document.getElementById("input-cpf");
 
     // Define o texto do placeholder dinamicamente
-    input.setAttribute("placeholder", "CPF");
+    input.setAttribute("placeholder", "064.030.713-27");
 });
 
 // COLOCAR A INFORMAÇÃO NO PLACEHOLDER NO EMAIL
