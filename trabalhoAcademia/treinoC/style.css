@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+/*Começo do Header*/
+
+header {
+    background-color: #05121A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 0.5rem 6rem;
+    box-shadow: 0px 3px 5px #F24405;
+    width: 100%;
+    top: 0;
+    position: fixed; /* Mantém o elemento fixo na tela */
+}
+
+header .img-logo img {
+    width: 100px;
+    height: 60px;
+}
+
+header .info-user {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 3rem;
+}
+
+header .info-user p {
+    color: #fdfdfd;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    padding-top: 1rem;
+}
+
+header .info-user img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 1030px) {
+    header {
+        padding: 0.5rem 3rem;
+    }
+
+    header .img-logo img {
+        width: 80px;
+        height: 60px;
+    }
+
+    header .info-user p {
+        display: none;
+    }
+
+    header .info-user img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/*Fim do Header*/
+
+/*Começo do Body*/
+
+main {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    margin-top: 80px; /* Espaço para o header fixo */
+    
+}
+
+/* Ajustar o conteúdo principal para respeitar o menu lateral */
+main .informacoes-pessoais {
+
+    width: 100%; /* Largura restante */
+    padding: 10px;
+    background-color: #fdfdfd;
+    overflow-y: auto;
+}
+
+main .opcoes-user .botao-opcao {
+    border: none;
+    margin-top: 2rem;
+    margin-right: 0rem;
+    background-color: #fdfdfd;
+    width: 50%;
+    height: 2.5rem;
+    text-align: center;
+    border-radius: 0.4rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    z-index: 999; /* Garante funcionalidade sem sobreposição */
+}
+
+main .opcoes-user .botao-voltar {
+    border: none;
+    margin-top: 2rem;
+    background-color: #fdfdfd;
+    width: 50%;
+    height: 2.5rem;
+    text-align: center;
+    border-radius: 0.4rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    outline: none;
+}
+
+main .opcoes-user .botao-voltar img {
+    width: 2rem;
+    height: 1.5rem;
+    padding-right: 0.5rem;
+    color: #F24405;
+    background: none;
+    padding-left: 0.5rem;
+
+}
+
+main .opcoes-user .botao-ficar {
+    width: 45%;
+    border: none;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: #F24405;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    color: #fdfdfd;
+}
+
+main .opcoes-user .botao-sair {
+    width: 45%;
+    border-color: #F24405;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+}
+
+main .opcoes-user .botao-sair a {
+    text-decoration: none;
+    color: #F24405;
+}
+
+@media screen and (max-width: 1241px) {
+    main {
+        flex-direction: column;
+    }
+
+    main .opcoes-user {
+        height: auto;
+        width: 100%;
+        align-items: center;
+        padding: 1rem 0;
+    }
+
+    main .opcoes-user .botao-opcao{
+        margin-top: 0.5rem;
+    }
+
+    main .opcoes-user .botao-voltar{
+        margin-top: 0.5rem;
+    }
+}
+
+.produtos-container {
+    display: flex;
+    flex-direction: column;  /* Alinha os itens em coluna */
+    gap: 2rem;  /* Espaço entre os itens */
+}
+
+main section.inico-user {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+main section.inico-user .detalhes-user h2{
+    color: #05121A;
+    padding-top: 2rem;
+    font-weight: bold;
+}
+
+main section.inico-user .infos-gerais{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+main section.inico-user .infos-gerais .produtos-container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: nowrap;
+    margin-top: 2rem;
+}
+
+main section.inico-user .infos-gerais .produtos-container .box-produtos {
+    margin: 10px;
+    padding: 15px;
+    background-color: #fdfdfd;
+    border-radius: 10px;
+    text-align: center;
+    min-height: 6rem;
+    width: 100%;
+    border: 2px solid #05121A;
+    
+}
+
+main section.inico-user .infos-gerais .produtos-container .box-produtos h2{
+    font-weight: bold;
+    color: #05121A;
+    text-align: center;
+}
+
+main section.inico-user .infos-gerais .produtos-container .box-produtos h3{
+    font-weight: bold;
+    color: #F24405;
+}
+
+main section.inico-user .infos-gerais .produtos-container .box-produtos h4{
+    font-weight: bold;
+    color: #05121A;
+}
+
+/* Estilo geral da lista de definição */
+.definicao-alinhada {
+    display: flex;
+    justify-content: center; /* Alinha os termos horizontalmente */
+    gap: 100px; /* Espaço entre os termos */
+    margin-top: 30px;
+}
+
+/* Cada termo e sua descrição */
+.definicao-alinhada .termo {
+    display: flex;
+    flex-direction: column; /* Exibe o termo e sua descrição em coluna */
+    align-items: center; /* Alinha o termo e a descrição no centro */
+}
+
+/*Fim do Body*/
